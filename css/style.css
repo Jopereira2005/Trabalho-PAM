@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --corPrimaria: #2365EB;
+    --corSecundaria: #1e52b9;
+    --corLetra: #22262a;
+    --corLetra2: #484f56;
+  
+    --corFundo: #fffaf0;
+    --corFundo-2: #cbe7e7;
+  
+    font-size: 62.5%; /* 1rem = 10px */
+
+}
+  
+html, body {
+    background-color: var(--corFundo-2);
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0; 
+}
+  
+body {
+    font-family: 'DM Sans';
+    font-size: 1.6rem;
+  
+    text-align: center;
+  
+
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+ /* =================== header */
+
+div#Fundo {
+    background-color: var(--corFundo-2);
+}
+.header navigation {
+    width: 90rem;
+    height: 10rem;
+    margin-inline: auto;
+    display: flex;  
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    z-index: 1;
+    
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header navigation div.logo {
+    font-size: 4rem;
+}
+
+header div.logo span.logoCor1 {
+    color: var(--corLetra);
+}
+
+header div.logo span.logoCor2 {
+    color: var(--corPrimaria);
+    font-weight: 600;
+}
+
+header div.logo {
+    margin: 5rem;
+}
+
+header nav {
+    margin-right: 5rem;
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+header nav ul li {
+    margin-right: 10px;
+}
+header nav ul li a {
+    color: var(--corPrimaria);
+    text-decoration: none;
+    font-weight: 100;
+}
+header nav ul li a:hover {
+    font-weight: 700;
+    transition: 0.1s;
+    border-radius: 0.2rem;
+    padding-bottom: 1.4rem;
+    border-bottom: 2px solid var(--corPrimaria);
+    cursor: pointer;
+}
+header button.cadastro {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    
+    margin-top: 5rem;
+    margin-right: 5rem;
+    
+    background: transparent;
+    border: 2px solid var(--corPrimaria);
+    border-radius: 4rem;
+
+    margin-bottom: 6rem;
+
+    height: 4rem;
+    width: 20rem;
+
+    color: var(--corPrimaria);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    
+}
+header button.cadastro:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background: var(--corPrimaria);
+    color: white;
+    text-transform: uppercase;   
+}
+
+/* ==================== MAIN Home */
+main {
+    display: flex;
+    justify-content:  center;
+    flex-direction: column;
+    
+    margin-top: 15rem;
+    flex:1 0 auto;
+
+    height: auto;
+
+}
+#home {
+    padding-inline: 5rem; 
+}
+
+#home h4 {
+    color: var(--corPrimaria);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+#home h1 {
+    font-size: 3.4rem;
+    color: var(--corLetra);
+    line-height: 130%;
+  
+    margin-bottom: 2.4rem;
+}
+
+#home p {
+    font-size: 1.8rem;
+    color: var(--corLetra2);
+    line-height: 130%;
+  
+    margin-bottom: 2.4rem;
+}
+
+#home img {
+    width: 70rem;
+    display: block;
+    margin-inline: auto;
+    object-position: 0 4rem;
+    z-index: 100;
+}
+#home div.status {
+    width: 75rem;
+    padding-block: 4rem;
+    margin-inline: auto;
+    
+    background-color: var(--corFundo);
+    border: 0.1rem solid var(--corFundo-2);
+    border-bottom: 0.1rem solid var(--corFundo);
+    border-radius: 0.6rem 0.6rem 0rem 0;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;    
+    
+}
+
+
+#home .stats h3 {
+    background-color: var(--corFundo);
+    font-size: 3rem;
+    color: var(--corLetra);  
+    margin-bottom: 0.5rem;
+}
+  
+#home .stats p {
+    background-color: var(--corFundo);
+    margin: 0;
+    color: var(--corPrimaria);
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+
+#home button.cadastro {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin:auto;
+
+    margin-top: 5rem;
+    
+    background: var(--corPrimaria);
+    border: 2px solid var(--corPrimaria);
+    border-radius: 4rem;
+
+    margin-bottom: 6rem;
+
+    height: 6rem;
+    width: 26rem;
+
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;   
+}
+#home button.cadastro:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background: var(--corSecundaria);
+    border: 2px solid var(--corSecundaria);
+    color: white;
+    text-transform: uppercase;   
+}
+
+ /* ================== MAIN cadastro */
+#cadastro {
+    background-color: var(--corFundo);       
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    font-size: 1.8rem;
+    color: var(--corLetra2);
+}
+#cadastro h4 {
+    color: var(--corPrimaria);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+#cadastro h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-inline: 25rem;
+    color: var(--corLetra);
+    line-height: 130%;
+  
+    margin-bottom: 2.4rem;
+}
+
+#cadastro button.cadastro {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin:auto;
+
+    margin-top: 5rem;
+    
+    background: var(--corPrimaria);
+    border: 0.2rem solid var(--corPrimaria);
+    border-radius: 4rem;
+
+    margin-bottom: 6rem;
+
+    height: 7rem;
+    width: 28rem;
+
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;   
+}
+
+#cadastro button.cadastro:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background: var(--corSecundaria);
+    border: 2px solid var(--corSecundaria);
+    color: white;
+    text-transform: uppercase;   
+}
+
+#cadastro h1.cont {
+    border-top: 0.1rem solid var(--corPrimaria);
+    padding-top: 6rem;
+    color: var(--corPrimaria);
+}
+#cadastro div.conta_ex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-inline: auto;
+    color: var(--corLetra);
+    font-size: 2.4rem;
+    padding-bottom: 3rem;
+}
+#cadastro div.conta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 75rem;
+    gap: 2rem;
+    margin: auto;
+    padding-block: 2rem;
+    border: 0.1rem solid var(--corPrimaria);
+    background-color: var(--corPrimaria);
+    color: white;
+    border-radius: 1.5rem;
+
+    padding-inline: 3rem;
+}
+#cadastro div.conta h5 {
+    word-wrap: break-word;
+    width: 17rem;
+    padding: auto;
+}
+
+#cadastro div.conta:hover{
+    background-color: var(--corSecundaria);
+    color: white;
+    transition: all 0.5s;
+}
+
+
+#cadastro button.btn-remove {
+    cursor: pointer;
+    border: none;
+    color: red;
+    background-color: transparent;
+    font-weight: bold; 
+
+}
+#cadastro button.btn-remove:hover{
+
+    color: white;
+    transition: all 0.5s;
+}
+
+/* =================== footer */
+
+footer {
+    background-color: var(--corPrimaria);
+    
+}
+.footer {
+    flex: 0;
+    width: 90rem;
+    margin: auto;
+
+    display: flex;  
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding-block: 6rem;
+    
+    text-align: left;
+  
+    color: white;
+    padding-inline: 10rem;
+}
+
+.footer div.logo {
+    cursor: pointer;
+    font-size: 4rem;
+}
+
+footer div.logo span.logoCor2 {
+    font-weight: 600;
+}
+  
+footer svg {
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+} 
+  
+footer p {
+    color: white;
+    line-height: 2;
+  
+    margin-bottom: 3.2rem;
+}
+
+footer span.nome {
+    color: white;
+    font-size: 1rem;
+}
+
+/* ============== modal*/
+
+div#modal.desaparecer {
+    display: none;
+}
+.layer {
+    position: fixed;    
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000;
+}
+
+.layer form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: var(--corPrimaria);
+    padding-inline: 10rem;
+    padding-block: 5rem;
+    border-radius: 4rem;
+}
+
+.layer form input {
+    font-size: 1.5rem;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 0.2rem solid white;
+}
+
+.layer form input::placeholder {
+    color:white;
+    font-weight: 700;
+    text-align: left;
+}
+
+.layer form button {
+    border: 0.2rem solid white;
+    background-color: var(--corPrimaria);
+    color: white;
+    font-weight: bold;
+
+    width: 20rem;
+    height: 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.layer form button:hover {
+    background-color: white;
+    color: var(--corPrimaria);
+    transition: all 0.5s;
+}
+.fechar {
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-right: 4rem;
+
+
+    color: white;
+    border: none;
+
+}
+
+.fechar:hover {
+    color:red;
+}
+.layer h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+/* =========== header scroll */
+
+
+div#Fundo.scroll {
+    background-color: var(--corPrimaria);
+    width: 100vw;
+    height: 10rem;
+    position: fixed;
+    transition: 0.5s all;
+}
+navigation.scroll div.logo span.logoCor1 {
+    color: white;
+}
+
+navigation.scroll div.logo span.logoCor2 {
+    color: white;
+    font-weight: 600;
+}
+
+navigation.scroll nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+navigation.scroll nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+navigation.scroll button.cadastro {
+    background: transparent;
+    border: 2px solid white;
+    color: white;   
+}
+navigation.scroll button.cadastro:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background: white;
+    color: var(--corPrimaria);
+    text-transform: uppercase;   
+}
+
+/* =================== MEDIA QUERY */
+
+
+@media only screen and (max-width: 925px) {
+    section  {
+        width: 36rem;
+    }
+    /* ======= HEAD =================*/
+    header {
+        width: 100%;
+    }
+
+    .header navigation {
+        width: 36rem;
+        height: 10rem;
+        margin-inline: auto;
+        display: flex;  
+        flex-direction: row;
+    
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        z-index: 1;
+        
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .header div.logo {
+        font-size: 3rem;
+    }
+    header div.logo {
+        margin-inline: 2rem;
+    }
+    
+    header nav {
+        margin-right: 2rem;
+    
+    }
+    
+    header nav ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin-bottom: 0.6rem;
+    }
+
+    header nav ul li a {
+        color: var(--corPrimaria);
+        text-decoration: none;
+        font-weight: 100;
+    }
+
+    header nav ul li a:hover {
+
+        border-radius: 0.2rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 0.2rem solid var(--corPrimaria);
+        cursor: pointer;
+    }
+    
+    header button.cadastro {
+        display:none;
+    }
+    
+    /*=== HOME =================================*/
+    #home {
+        margin-inline: auto;  
+    }
+    #home img {
+        width: 25rem;
+        height: 17rem;
+        display: block;
+        margin-inline: auto;
+        object-position: 0 2rem;
+        z-index: 100;
+    }
+    #home div.status {
+        width: 25rem;
+
+        margin-inline: auto;
+    
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;    
+        
+    }
+
+    /*=== CADASTRO =================================*/
+    
+    section#cadastro {
+        width: 100%;
+        background-color: var(--corFundo);
+    }
+    #cadastro {    
+        margin-inline: auto;   
+        padding-top: 3rem;
+        padding-bottom: 12rem;
+        font-size: 1.8rem;
+    }
+    #cadastro h4 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+    
+    #cadastro h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        width: 36rem;
+        font-size: 3rem;
+        text-align: center;
+        margin-inline: auto;
+        color: var(--corLetra);
+        line-height: 130%;      
+        margin-bottom: 2.4rem;
+    }
+    
+    #cadastro button.cadastro {
+
+        margin-top: 5rem;
+        
+        border-radius: 4rem;
+    
+        margin-bottom: 6rem;
+    
+        height: 6.5rem;
+        width: 25rem;
+    
+        font-weight: 700;
+        text-transform: uppercase;   
+    }
+
+    
+    #cadastro h1.cont {
+        border-top: 0.1rem solid var(--corPrimaria);
+        padding-top: 6rem;
+        color: var(--corPrimaria);
+    }
+    #cadastro div.conta_ex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-inline: auto;
+
+    }
+    #cadastro div.conta {
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 20rem;
+        gap: 2rem;
+
+        padding-block: 2rem;
+        border-radius: 1.5rem;
+    
+    }
+    #cadastro div.conta h5 {
+        font-size: 1rem;
+        word-wrap: break-word;
+        width: 17rem;
+        padding: auto;
+        margin-bottom: 1rem;
+    }
+
+    /*=== FOOTER =================================*/
+
+    footer {
+        background-color: var(--corPrimaria);       
+    }
+    .footer {
+        width: 36rem;
+        padding-inline: 1rem;
+    }
+    
+    .footer div.logo {
+        font-size: 1.8rem;
+    }
+      
+    footer svg {
+        width: 3rem;
+        height: 3rem;
+    } 
+    footer span.nome {
+        padding-left: 1rem;
+        font-size: 1rem;
+    }
+    
+}
+
+
